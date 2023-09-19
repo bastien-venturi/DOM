@@ -25,6 +25,7 @@ paras.forEach(function(para) {
   });
 
 
+  
   function rand() {
     let letters = '0123456789ABCDEF';
     let color = '#';
