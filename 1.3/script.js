@@ -40,13 +40,11 @@ let main = document.querySelector('main');
 let article = document.createElement('article');
 
 function randcolor() {
-    let letters = '0123456789ABCDEF';
-    let color = '#';
-    for (let i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
+    let r = Math.floor(Math.random() * 256);
+    let g = Math.floor(Math.random() * 256);
+    let b = Math.floor(Math.random() * 256);
+    return `rgb(${r},${g},${b})`;
     }
-    return color;
-}
 
 function dark(defdark) {
     let r = parseInt(defdark.slice(1, 3), 16);
